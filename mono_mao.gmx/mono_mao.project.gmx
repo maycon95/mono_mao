@@ -6,10 +6,14 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_player_down</sprite>
-    <sprite>sprites\spr_player_up</sprite>
-    <sprite>sprites\spr_player_left</sprite>
-    <sprite>sprites\spr_player_right</sprite>
+    <sprite>sprites\spr_player_baixo</sprite>
+    <sprite>sprites\spr_player_atacando_baixo</sprite>
+    <sprite>sprites\spr_player_cima</sprite>
+    <sprite>sprites\spr_player_atacando_cima</sprite>
+    <sprite>sprites\spr_player_esq</sprite>
+    <sprite>sprites\spr_player_atacando_esq</sprite>
+    <sprite>sprites\spr_player_atacando_dir</sprite>
+    <sprite>sprites\spr_player_dir</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
