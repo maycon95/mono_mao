@@ -101,6 +101,43 @@ y += velv
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// ataque player
+if(ataque){
+    switch (sprite_index){
+        case spr_player_esq:
+            sprite_index = spr_player_atacando_esq;
+        break;
+        case spr_player_dir:
+            sprite_index = spr_player_atacando_dir
+        break;
+        case spr_player_cima:
+            sprite_index = spr_player_atacando_cima;
+        break;
+        case spr_player_baixo:
+            sprite_index = spr_player_atacando_baixo;
+        break;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
