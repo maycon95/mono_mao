@@ -28,6 +28,8 @@
             <string>/// variaveis do player
 vel = 8; //Velocidade.
 image_speed = 0;
+global.vida = 3;
+global.moeda = 0;
 </string>
           </argument>
         </arguments>
@@ -50,7 +52,14 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// movimentacao do player
+            <string>//Morrendo
+if global.vida &lt;= 0
+{
+    instance_destroy();
+    room_restart();
+}
+
+/// movimentacao do player
 //Impedindo que o player saia da tela.
 x = min(max(x, 0+sprite_width), room_width-sprite_width);
 y = min(max(y, 0+sprite_height), room_height-sprite_height);
@@ -134,6 +143,104 @@ if(ataque){
         break;
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_slime">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.vida --;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Desenhando sprite dos Corações na tela.
+c = 1;
+
+repeat (global.vida)
+{
+    draw_sprite_ext(spr_coracao, 0, 30*c, 20, 1.5, 1.5, 0, c_white, 1)
+    c ++;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="82">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_restart();
 </string>
           </argument>
         </arguments>
