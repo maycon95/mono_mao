@@ -20,6 +20,9 @@
     <sprite>sprites\spr_moeda_gui</sprite>
     <sprite>sprites\spr_coracao</sprite>
     <sprite>sprites\spr_slime</sprite>
+    <sprite>sprites\spr_chao1</sprite>
+    <sprite>sprites\spr_chao2</sprite>
+    <sprite>sprites\spr_trigo</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -29,6 +32,9 @@
     <object>objects\obj_moeda</object>
     <object>objects\obj_coracao</object>
     <object>objects\obj_slime</object>
+    <object>objects\obj_chao1</object>
+    <object>objects\obj_chao2</object>
+    <object>objects\obj_trigo</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_01</room>

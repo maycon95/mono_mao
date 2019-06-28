@@ -28,7 +28,7 @@
             <string>/// variaveis do player
 vel = 8;            //Velocidade.
 image_speed = 0;    //Velocidade da imagem.
-global.vida = 200;    //Vida.
+global.vida = 3;  //Vida.
 global.moeda = 0;   //Moedas.
 </string>
           </argument>
@@ -166,7 +166,6 @@ if(ataque){
           <argument>
             <kind>1</kind>
             <string>global.vida --;
-
 </string>
           </argument>
         </arguments>
