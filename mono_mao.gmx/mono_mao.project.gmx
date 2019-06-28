@@ -17,6 +17,7 @@
       <sprite>sprites\spr_player_atacando_dir</sprite>
     </sprites>
     <sprite>sprites\spr_moeda</sprite>
+    <sprite>sprites\spr_moeda_gui</sprite>
     <sprite>sprites\spr_coracao</sprite>
     <sprite>sprites\spr_slime</sprite>
   </sprites>
@@ -24,6 +25,7 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <object>objects\obj_moeda_gui</object>
     <object>objects\obj_moeda</object>
     <object>objects\obj_coracao</object>
     <object>objects\obj_slime</object>

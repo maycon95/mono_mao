@@ -68,6 +68,7 @@
     <instance objName="obj_coracao" x="224" y="352" name="inst_6CAC3827" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coracao" x="160" y="352" name="inst_4B65175A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coracao" x="96" y="352" name="inst_F8D10501" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_moeda_gui" x="0" y="0" name="inst_49529FA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
