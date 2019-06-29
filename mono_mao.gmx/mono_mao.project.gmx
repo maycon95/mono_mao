@@ -16,13 +16,17 @@
       <sprite>sprites\spr_player_atacando_esq</sprite>
       <sprite>sprites\spr_player_atacando_dir</sprite>
     </sprites>
+    <sprites name="Chao">
+      <sprite>sprites\spr_trigo</sprite>
+      <sprite>sprites\spr_chao1</sprite>
+      <sprite>sprites\spr_chao2</sprite>
+      <sprite>sprites\spr_chao3</sprite>
+      <sprite>sprites\spr_chao4</sprite>
+    </sprites>
     <sprite>sprites\spr_moeda</sprite>
     <sprite>sprites\spr_moeda_gui</sprite>
     <sprite>sprites\spr_coracao</sprite>
     <sprite>sprites\spr_slime</sprite>
-    <sprite>sprites\spr_chao1</sprite>
-    <sprite>sprites\spr_chao2</sprite>
-    <sprite>sprites\spr_trigo</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -32,9 +36,13 @@
     <object>objects\obj_moeda</object>
     <object>objects\obj_coracao</object>
     <object>objects\obj_slime</object>
-    <object>objects\obj_chao1</object>
-    <object>objects\obj_chao2</object>
-    <object>objects\obj_trigo</object>
+    <objects name="Chao">
+      <object>objects\obj_trigo</object>
+      <object>objects\obj_chao2</object>
+      <object>objects\obj_chao1</object>
+      <object>objects\obj_chao3</object>
+      <object>objects\obj_chao4</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_01</room>
